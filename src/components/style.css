@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body, html {
+    font-family: 'Poppins';
+
+}
+
+
+.Clickdee-choose {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+}
+
+.Clickdee-choose-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+}
+
+
+.Clickdee-choose-intro-container {
+    width: 30%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-content: start;
+    flex-direction: column;
+    padding: calc(0 * 1vw) calc(6.94444 * 1vw) calc(0 * 1vw);
+    height: calc(25.34722 * 1vw)
+}
+
+
+.Intro-heading {
+    color: #001B7C;
+    font-size: calc(3.05556 * 1vw);
+    font-weight: 600;
+}
+
+.Intro-sub-heading {
+    display: none;
+}
+
+.Intro-desc {
+    font-size: calc(1.04167 * 1vw);
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.Clickdee-choose-item {
+    background: #f6fbfe;
+    width: 25.9%;
+    height: calc(25.34722 * 1vw);
+    cursor: pointer;
+    transition: all .25s cubic-bezier(.165, .84, .44, 1);
+}
+
+.Clickdee-choose-item:hover {
+    background: #ffffff;
+    transform: scale(1.05);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+
+@keyframes pulse {
+    from {
+        box-shadow: 0px 0px 10px 3px #0066cc;
+    }
+    to {
+        box-shadow: 0px 0px 20px 5px #0066cc;
+    }
+}
+
+.item-desc {
+    visibility: hidden;
+    margin: 1.25rem 0 0;
+    font-size: calc(1.04167 * 1vw);
+    line-height: 1.47;
+}
+
+
+.Clickdee-choose-item:hover .item-desc {
+    visibility: visible;
+}
+
+
+.item-container {
+    padding: calc(4.79167 * 1vw) calc(3.47222 * 1vw);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.item-img {
+    height: 65px;
+    width: 60px
+}
+
+
+.item-icon-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.item-img {
+    height: 60px;
+    width: 65px
+}
+
+.item-heading {
+    color: #001B7C;
+    font-size: calc(1.7 * 1vw);
+    line-height: 1.11;
+    font-weight: 400;
+    margin: 1.125rem 0 0;
+}
+
+@media (max-width: 768px) {
+    .Clickdee-choose {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .item-desc {
+        visibility: visible;
+        margin: 2rem 0 0;
+        font-size: calc(1.04167 * 1vw);
+        line-height: 1.47;
+    }
+
+    .item-img {
+        max-height: 60px;
+        max-width: 65px
+    }
+
+    .item-heading {
+
+        font-size: 18px;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .item-desc {
+        font-size: 14px;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .Clickdee-choose-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow: auto;
+    }
+
+    .Clickdee-choose-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .Clickdee-choose-item {
+        background: #f6fbfe;
+        width: 100%;
+        height: 100%;
+        margin: 0px 10px;
+    }
+
+    .Clickdee-choose-intro-container {
+        width: 90vw;
+        height: 100%;
+        padding-left: 20px;
+    }
+
+
+    .item-container {
+        width: 180px;
+        padding: 15px 40px;
+        display: block;
+    }
+
+    .Intro-heading {
+        font-size: 1.5rem;
+    }
+
+    .Intro-desc {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
